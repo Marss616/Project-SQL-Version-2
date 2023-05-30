@@ -1,0 +1,4 @@
+Step 1 : Download the program, both frontend and backend
+Step 1 : Download latest python
+Step 1 : Have a mysql databases with the parameters of backend.py
+Step 1 : Run the frontend.py

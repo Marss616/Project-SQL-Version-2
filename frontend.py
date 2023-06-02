@@ -18,8 +18,10 @@ def delete():
 sql_cmd_label = Label(master, text="Enter your SQL command:")
 sql_cmd_entry = Entry(master)
 
-sql_cmd_button = Button(master, text="Enter SQL", command=call, padx=10)
-sql_cmd_button_delete = Button(master, text="Delete output", command=delete, padx=10)
+sql_cmd_button = Button(master, text="Enter SQL", command=call)
+sql_cmd_button_delete = Button(master, text="Delete output", command=delete)
+sql_cmd_show_databases_button = Button(master, text="test", command=call) # flag 1
+
 
 header_output = Label(master, pady=10, text = "Output: ", font=("Comic Sans MS", 20))
 sql_cmd_output = Text(master, width=50, height=10)
@@ -29,10 +31,13 @@ sql_cmd_output = Text(master, width=50, height=10)
 
 sql_cmd_label.grid(row = 1, column = 1, padx=20, pady=10)
 sql_cmd_entry.grid(row = 2, column = 1, pady=10,)
+
 sql_cmd_button.grid(row = 3, column = 1,)
+sql_cmd_show_databases_button.grid(row = 3, column = 2) # flag 1
+
 sql_cmd_button_delete.grid(row = 4, column = 1, pady=10)
 header_output.grid(row = 5, column = 1)
-sql_cmd_output.grid(row = 6, column = 1, padx=10)
+sql_cmd_output.grid(row = 6, column = 1)
 
 
 # START Place Wigets
